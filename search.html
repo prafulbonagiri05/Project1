@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>search-box</title>
+        <style>
+            body{
+                background-image: url('green.jfif');
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            .main{
+                max-width: 1000px;
+                margin: auto;
+                margin-top: 150px;
+
+            }
+            input[type=text]{
+                width: 90%;
+                padding: 12px;
+                font-family: arial;
+                font-size: 17px;
+                border: 1px solid #0076a3;
+                border-right: 0;
+                border-radius: 5px 0 0 5px;
+                font-style: italic;
+            }
+            input[type=submit]{
+                position: absolute;
+                padding:12px ;
+                width: 8%;
+                font-family: arial;
+                font-size: 17px;
+                text-shadow: 0 0 1px #000;
+                cursor: pointer;
+                text-align: center;
+                color: #fff;
+                border-right: 0;
+                background: linear-gradient(#00adee , #0078a5);
+                border:1px solid #0076a3;
+            }
+            input[type=submit] :hover{
+                background: linear-gradient(#0095cc , #00678e);
+
+            }
+            input[type=text] :focus,input[type=submit] :focus{
+                outline: none;
+            }
+            .nav-links{
+                flex:1;
+                text-align: right;
+            }
+            .nav-links ul li {
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position:relative;
+            }
+            .nav-links ul li a{
+                color:#fff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .nav-links ul li::after{
+                content: '';
+                width: 0;
+                height: 3px;
+                background:white;
+                display: block;
+                margin: auto;
+            }
+            .nav-links ul li:hover::after{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-links">
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="main">
+            <form action="https://www.google.com" target="_blank" method="get">
+                <input type="text" name="serach" placeholder="Type to search">
+                <input type="Submit" value="search">
+            </form>
+        </div>           
+    </body>
+</html>
